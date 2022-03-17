@@ -244,4 +244,19 @@ INNER JOIN departments AS d
 ON (de.dept_no = d.dept_no)
 WHERE de.dept_no IN (d007, d001)
 
-
+SELECT DISTINCT ON (emp_no) e.emp_no,
+e.first_name,
+e.last_name,
+e.birth_date,
+d.from_date,
+d.to_date,
+ttl.title
+INTO mentorship_eligibility
+FROM employees AS e
+INNER JOIN dept_emp AS d
+ON (e.emp_no=d.emp_no)
+INNER JOIN titles AS ttl
+ON (e.emp_no=ttl.emp_no)
+WHERE (d.to_date = '9999-01-01')
+	AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+ORDER BY e.emp_no;
