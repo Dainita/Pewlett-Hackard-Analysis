@@ -1,3 +1,4 @@
+-- Create table of retirment eligible employees
 SELECT e.emp_no,
 	e.first_name,
 	e.last_name,
@@ -10,16 +11,17 @@ INNER JOIN titles AS ttl
 ON (e.emp_no=ttl.emp_no)
 WHERE e.birth_date BETWEEN '1952-01-01' AND '1955-12-31';
 
+-- Create table of unique titles by removing duplicates
 SELECT DISTINCT ON (emp_no) r.emp_no,
 r.first_name,
 r.last_name,
 r.title
-
 INTO unique_titles
 FROM retirement_titles_table AS r
 WHERE r.to_date = '9999-01-01'
 ORDER BY r.emp_no, r.to_date DESC;
 
+-- Create table of count of retiring employees by titile
 SELECT COUNT(ut.emp_no), ut.title
 INTO retiring_titles
 FROM unique_titles as ut
@@ -28,6 +30,7 @@ ORDER BY COUNT(ut.title) DESC;
 
 SELECT * FROM retiring_titles
 
+--Create table of Mentorship eligible employees
 SELECT DISTINCT ON (emp_no) e.emp_no,
 e.first_name,
 e.last_name,
