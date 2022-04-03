@@ -16,8 +16,8 @@ Based on the review of the queries, Pewlett-Hackard is potentially facing a staf
   - Of the 72,458 employees eligible for retirment, only 1,549 are eligible for the mentorship program
   - Only 178 Senior Engineer and 553 Senior Staff employess are eligible for the mentorship program
 
-![Retirement Eligibility](https://github.com/Dainita/Pewlett-Hackard-Analysis/Resources/retirement_eligibility.png)
-![Mentorship Eligibility](https://github.com/Dainita/Pewlett-Hackard-Analysis/Resources/mentorship_eligibility.png)  
+![Retirement Eligibility](https://github.com/Dainita/Pewlett-Hackard-Analysis/retirement_eligibility.png)
+![Mentorship Eligibility](https://github.com/Dainita/Pewlett-Hackard-Analysis/mentorship_eligibility.png)  
 
 ## Summary
 Findings indicate that the silver-tsunami will generate over 72,000 vacant postions for Pewlett-Hackard. With only 1,549 available employees for the mentorship program, Pewlett-Hackard should consider expanding the eligibility parameters for this program. Over 50,000 retirement eligible employees are currently in Senior positions and potentially additional assets for the mentorship program. Also, additional lower level employees should be hired to backfill the positions vacated by those promoted to senior level positions that are vacated by the retiring employees. Preplanning for the regeneration of the workforce will help to ensure service continuity.
